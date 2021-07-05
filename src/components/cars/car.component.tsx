@@ -8,12 +8,8 @@ const car = carData[0];
 
 export const CarComponent: React.FC = () => {
   return (
-    <div
-      style={{
-        backgroundColor: 'Red',
-      }}
-    >
-      <h1>
+    <div>
+      <h1 className="carHeader">
         {car.make} {car.model}
       </h1>
       <div className="carContainer">

@@ -1,7 +1,16 @@
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
 @media (min-width: 640px) {
-  .carPrice,
-  h2 {
-    margin-top: 0;
-    margin-bottom: 8px;
+  .carPriceWrapper {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carPriceWrapper {
+    margin-left: 6rem;
   }
 }

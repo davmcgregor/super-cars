@@ -1,6 +1,8 @@
+import './search.css';
+
 export const SearchComponent: React.FC = () => {
   return (
-    <div style={{backgroundColor: 'blue'}}>
+    <div className="searchContainer">
       <input className="search" type="search" placeholder="Search..." />
     </div>
   );

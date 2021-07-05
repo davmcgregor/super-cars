@@ -5,8 +5,8 @@ const car = carData[0];
 
 export const CarDetails: React.FC = () => {
   return (
-    <div className="carDetails">
-      <div className="carDetailsWrapper">
+    <div className="carDetailsWrapper">
+      <div className="carDetailsSections">
         <div className="carDetailsHeaders">
           <div>Fuel</div>
           <div>Shift</div>

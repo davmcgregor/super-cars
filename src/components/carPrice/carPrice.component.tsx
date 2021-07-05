@@ -5,7 +5,7 @@ const car = carData[0];
 
 export const CarPrice: React.FC = () => {
   return (
-    <div className="carPrice">
+    <div className="carPriceWrapper">
       <h2>
         {car.price.toLocaleString('en-AU', {
           style: 'currency',
