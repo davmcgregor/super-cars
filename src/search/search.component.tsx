@@ -1,5 +1,7 @@
 export const SearchComponent: React.FC = () => {
-    return <div>
-        <input className="search" type="search" />
+  return (
+    <div style={{backgroundColor: 'blue'}}>
+      <input className="search" type="search" />
     </div>
-}
+  );
+};
