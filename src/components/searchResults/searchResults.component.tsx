@@ -5,14 +5,22 @@ import {getCarDetails} from '../cars/car.api';
 import {formatter} from '../../utils/utils';
 
 export const SearchResultsComponent: React.FC = () => {
-  const {results} = useContext(CarsContext);
-  console.log(results);
+  const {results, setResults, setSelectedCar} = useContext(CarsContext);
+
+  const handleClick = (make: string, model: string) => {
+    setSelectedCar(getCarDetails(make, model));
+    setResults([]);
+  };
 
   return (
     <div className="searchResultsContainer">
-      <div className="searchResultsDropdown">
+      <div className="searchResultsWrapper">
         {results.map((car: any, key: any) => (
-          <div key={key}>
+          <div
+            className="searchResultsItem"
+            key={key}
+            onClick={(e) => handleClick(car.make, car.model)}
+          >
             <h2>{car.make}</h2>
             <h2>{formatter(car.price)}</h2>
           </div>

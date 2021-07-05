@@ -24,6 +24,8 @@ const CarsContextProvider = (props) => {
         setResults,
         query,
         setQuery,
+        selectedCar,
+        setSelectedCar,
       }}
     >
       {props.children}
