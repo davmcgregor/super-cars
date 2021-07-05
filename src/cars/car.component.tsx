@@ -16,7 +16,18 @@ export const CarComponent: React.FC = () => {
       <div className="carContainer">
         {/* carDetails */}
         <div className="carDetails">
-          <div>{car.fuelType}</div>
+          <div className="carDetailsWrapper">
+            <div className="carDetailsHeaders">
+              <div>Fuel</div>
+              <div>Shift</div>
+              <div>Color</div>
+            </div>
+            <div className="carDetailsItems">
+              <div>{car.fuelType}</div>
+              <div>{car.shiftType}</div>
+              <div>{car.colour}</div>
+            </div>
+          </div>
         </div>
         {/* carPrice */}
         <div className="carPrice">

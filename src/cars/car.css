@@ -7,6 +7,28 @@
 
 .carDetails {
   order: -9999;
+  color: #282c34;
+  text-align: left;
+}
+
+.carDetailsWrapper {
+  display: inline-flex;
+  background-color: #fff;
+  padding: 12px;
+}
+
+.carDetailsHeaders {
+  border-right: 2px solid #282c34;
+  padding-right: 15px;
+}
+
+.carDetailsItems {
+  padding-left: 30px;
+  padding-right: 80px;
+}
+
+.carPrice {
+  background-color: #282c34;
 }
 
 @media (min-width: 640px) {
@@ -17,5 +39,15 @@
 
   .carDetails {
     order: 9999;
+    width: 25%;
+  }
+
+  .carPrice {
+    width: 25%;
+  }
+
+  .carPrice,
+  h2 {
+    margin-top: 0;
   }
 }
