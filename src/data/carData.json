@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "make": "Mazda",
+    "model": "CX-8",
+    "price": 23900,
+    "fuelType": "Unleaded",
+    "shiftType": "Automatic",
+    "features": ["Fast", "Small", "Fun", "300k/l"],
+    "colour": "Red"
+  },
+  {
+    "id": 2,
+    "make": "Mazda",
+    "model": "CX-8",
+    "price": 23900,
+    "fuelType": "Unleaded",
+    "shiftType": "Automatic",
+    "features": ["Fast", "Small", "Fun", "300k/l"],
+    "colour": "Red"
+  },
+  {
+    "id": 3,
+    "make": "Mazda",
+    "model": "CX-8",
+    "price": 23900,
+    "fuelType": "Unleaded",
+    "shiftType": "Automatic",
+    "features": ["Fast", "Small", "Fun", "300k/l"],
+    "colour": "Red"
+  }
+]
