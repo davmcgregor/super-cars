@@ -1,31 +1,30 @@
-.carDetailsWrapper {
+.carSpecsWrapper {
   order: -9999;
   color: #282c34;
   text-align: left;
   margin-bottom: 3rem;
 }
 
-.carDetailsSections {
+.carSpecsSections {
   display: inline-flex;
   background-color: #fff;
   padding: 1rem;
 }
 
-.carDetailsHeaders {
+.carSpecsHeaders {
   border-right: 2px solid #282c34;
   padding-right: 1.5rem;
 }
 
-.carDetailsItems {
+.carSpecsItems {
   padding-left: 2.75rem;
   padding-right: 6rem;
 }
 
 @media (min-width: 640px) {
-  .carDetailsWrapper {
+  .carSpecsWrapper {
     order: 9999;
     margin-bottom: 0;
-    /* margin-left: 2rem; */
     width: 50%;
     overflow: hidden;
   }

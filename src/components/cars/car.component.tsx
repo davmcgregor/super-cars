@@ -1,5 +1,5 @@
 import {CarPrice} from '../carPrice/carPrice.component';
-import {CarDetails} from '../carDetails/carDetails.component';
+import {CarSpecs} from '../carSpecs/carSpecs.component';
 
 import carData from '../../data/carData.json';
 import './car.css';
@@ -13,7 +13,7 @@ export const CarComponent: React.FC = () => {
         {car.make} {car.model}
       </h1>
       <div className="carContainer">
-        <CarDetails />
+        <CarSpecs />
         <CarPrice />
       </div>
     </div>
