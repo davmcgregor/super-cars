@@ -1,6 +1,6 @@
 import './App.css';
-import {CarComponent} from './cars/car.component';
-import {SearchComponent} from './search/search.component';
+import {CarComponent} from './components/cars/car.component';
+import {SearchComponent} from './components/search/search.component';
 
 function App() {
   return (

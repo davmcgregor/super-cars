@@ -1,10 +1,3 @@
-.carContainer {
-  background-color: green;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .carDetails {
   order: -9999;
   color: #282c34;
@@ -27,27 +20,8 @@
   padding-right: 80px;
 }
 
-.carPrice {
-  background-color: #282c34;
-}
-
 @media (min-width: 640px) {
-  .carContainer {
-    background-color: orange;
-    flex-direction: row;
-  }
-
   .carDetails {
     order: 9999;
-    width: 25%;
-  }
-
-  .carPrice {
-    width: 25%;
-  }
-
-  .carPrice,
-  h2 {
-    margin-top: 0;
   }
 }

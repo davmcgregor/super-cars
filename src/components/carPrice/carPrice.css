@@ -1,0 +1,7 @@
+@media (min-width: 640px) {
+  .carPrice,
+  h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,13 @@
+.carContainer {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 640px) {
+  .carContainer {
+    background-color: orange;
+    flex-direction: row;
+  }
+}
