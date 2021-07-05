@@ -1,21 +1,26 @@
-import carData from '../../data/carData.json';
-import {formatter} from '../../utils/utils'
+import React, {useContext} from 'react';
+
+import {CarsContext} from '../../context/CarsContext';
+
+import {formatter} from '../../utils/utils';
+
 import './carPrice.css';
 
-const car = carData[0];
-
 export const CarPrice: React.FC = () => {
-  return (
-    <div className="carPriceWrapper">
-      <h2>
-        {formatter(car.price)}
-      </h2>
-      {car.features.map((feature, index) => (
-        <span key={index}>
-          {feature}
-          {index !== car.features.length - 1 && ' - '}
-        </span>
-      ))}
-    </div>
-  );
+  const { selectedCar } = useContext(CarsContext);
+  
+  if (selectedCar) {
+    return (
+      <div className="carPriceWrapper">
+        <h2>{formatter(selectedCar.price)}</h2>
+        {selectedCar.features.map((feature: string, index: number) => (
+          <span key={index}>
+            {feature}
+            {index !== selectedCar.features.length - 1 && ' - '}
+          </span>
+        ))}
+      </div>
+    );
+  }
+  return null;
 };

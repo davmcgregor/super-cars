@@ -5,11 +5,13 @@ import {getCarDetails} from '../cars/car.api';
 import {formatter} from '../../utils/utils';
 
 export const SearchResultsComponent: React.FC = () => {
-  const {results, setResults, setSelectedCar} = useContext(CarsContext);
+  const {results, setResults, setQuery, setSelectedCar} =
+    useContext(CarsContext);
 
   const handleClick = (make: string, model: string) => {
     setSelectedCar(getCarDetails(make, model));
     setResults([]);
+    setQuery('');
   };
 
   return (
@@ -21,7 +23,9 @@ export const SearchResultsComponent: React.FC = () => {
             key={key}
             onClick={(e) => handleClick(car.make, car.model)}
           >
-            <h2>{car.make}</h2>
+            <h2>
+              {car.make} {car.model}
+            </h2>
             <h2>{formatter(car.price)}</h2>
           </div>
         ))}

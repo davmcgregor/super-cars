@@ -11,7 +11,7 @@ const CarsContextProvider = (props) => {
   ];
 
   const [query, setQuery] = useState('');
-  const [results, setResults] = useState(testState);
+  const [results, setResults] = useState(initialState);
   const [selectedCar, setSelectedCar] = useState(null);
 
   const [error, setError] = useState(null);
