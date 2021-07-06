@@ -1,4 +1,4 @@
-import React, {createContext, useState} from 'react';
+import {createContext, useState} from 'react';
 import {findCars} from '../components/cars/car.api';
 
 export const CarsContext = createContext();
