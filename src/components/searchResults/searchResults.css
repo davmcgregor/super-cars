@@ -1,10 +1,10 @@
-.searchResultsContainer {
+.resultsContainer {
   position: relative;
   display: inline-block;
   width: 18rem;
 }
 
-.searchResultsWrapper {
+.resultsWrapper {
   z-index: 10;
   position: absolute;
   border: 2px #fff solid;
@@ -14,12 +14,12 @@
   overflow: hidden;
 }
 
-.searchResultsItem {
+.resultsItem {
   padding: 1rem 0;
   cursor: pointer;
 }
 
-.searchResultsItem:hover {
+.resultsItem:hover {
   background-color: #4b5563;
 }
 

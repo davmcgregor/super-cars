@@ -1,15 +1,15 @@
-.carFeatures {
+.featuresWrapper {
   padding: 0.5rem 0.75rem 0;
 }
 
 @media (min-width: 640px) {
-  .carPriceWrapper {
+  .priceContainer {
     width: 50%;
   }
 }
 
 @media (min-width: 1024px) {
-  .carPriceWrapper {
+  .priceContainer {
     margin-left: 6rem;
   }
 }

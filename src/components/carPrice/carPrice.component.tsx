@@ -11,9 +11,9 @@ export const CarPrice: React.FC = () => {
 
   if (selectedCar) {
     return (
-      <div className="carPriceWrapper">
+      <div className="priceContainer">
         <h2>{formatter(selectedCar.price)}</h2>
-        <div className="carFeatures">
+        <div className="featuresWrapper">
           {selectedCar.features.map((feature: string, index: number) => (
             <span key={index}>
               {feature}

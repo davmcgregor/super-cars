@@ -25,11 +25,11 @@ export const SearchResultsComponent: React.FC = () => {
 
   if (results.length) {
     return (
-      <div className="searchResultsContainer">
-        <div className="searchResultsWrapper">
+      <div className="resultsContainer">
+        <div className="resultsWrapper">
           {results.map((car: any, key: any) => (
             <div
-              className="searchResultsItem"
+              className="resultsItem"
               key={key}
               onClick={() => handleClick(car.make, car.model)}
             >

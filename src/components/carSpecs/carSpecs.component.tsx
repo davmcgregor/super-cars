@@ -15,14 +15,14 @@ export const CarSpecs: React.FC = () => {
 
   if (selectedCar) {
     return (
-      <div className="carSpecsContainer">
-        <div className="carSpecsWrapper">
-          <div className="carSpecsHeaders">
+      <div className="specsContainer">
+        <div className="specsWrapper">
+          <div className="specsHeaders">
             {headers.map((header, key) => (
               <div key={key}>{header}</div>
             ))}
           </div>
-          <div className="carSpecsItems">
+          <div className="specsItems">
             {items.map((item, key) => (
               <div key={key}>{item}</div>
             ))}
