@@ -20,10 +20,8 @@ export const SearchResultsComponent: React.FC = () => {
     } else {
       setResults([]);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query]);
-
-  console.log('dropdown', query.length, results);
 
   if (results.length) {
     return (
