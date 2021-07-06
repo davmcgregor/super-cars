@@ -2,15 +2,15 @@ import './search.css';
 import React, {useContext} from 'react';
 
 import {CarsContext} from '../../context/CarsContext';
-import {findCars} from '../cars/car.api';
 import {SearchResultsComponent} from '../searchResults/searchResults.component';
 
 export const SearchComponent: React.FC = () => {
-  const {query, setQuery, results, setResults} = useContext(CarsContext);
+  const {query, setQuery, results, fetchCars, loading, error} =
+    useContext(CarsContext);
 
   const handleChange = (e: any) => {
     setQuery(e.target.value);
-    findCars(query).then((data) => setResults(data));
+    fetchCars(query);
   };
 
   return (
@@ -22,6 +22,12 @@ export const SearchComponent: React.FC = () => {
         value={query}
         onChange={handleChange}
       />
+      {loading || error ? (
+        <p>
+          {loading && 'Loading...'}
+          {error && 'Something went wrong, please try again'}
+        </p>
+      ) : null}
       {results.length ? <SearchResultsComponent /> : null}
     </div>
   );
