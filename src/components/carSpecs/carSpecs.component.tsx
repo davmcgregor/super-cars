@@ -6,7 +6,6 @@ import './carSpecs.css';
 
 export const CarSpecs: React.FC = () => {
   const {selectedCar} = useContext(CarsContext);
-  
   const headers = ['Fuel', 'Shift', 'Color'];
   const items = [
     selectedCar.fuelType,
@@ -16,8 +15,8 @@ export const CarSpecs: React.FC = () => {
 
   if (selectedCar) {
     return (
-      <div className="carSpecsWrapper">
-        <div className="carSpecsSections">
+      <div className="carSpecsContainer">
+        <div className="carSpecsWrapper">
           <div className="carSpecsHeaders">
             {headers.map((header, key) => (
               <div key={key}>{header}</div>

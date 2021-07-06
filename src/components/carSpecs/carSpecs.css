@@ -1,11 +1,11 @@
-.carSpecsWrapper {
+.carSpecsContainer {
   order: -9999;
   color: #282c34;
   text-align: left;
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
-.carSpecsSections {
+.carSpecsWrapper {
   display: inline-flex;
   background-color: #fff;
   padding: 1rem;
@@ -22,7 +22,7 @@
 }
 
 @media (min-width: 640px) {
-  .carSpecsWrapper {
+  .carSpecsContainer {
     order: 9999;
     margin-bottom: 0;
     width: 50%;

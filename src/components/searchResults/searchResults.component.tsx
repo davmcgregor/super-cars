@@ -35,8 +35,9 @@ export const SearchResultsComponent: React.FC = () => {
             >
               <h2>
                 {car.make} {car.model}
+                <br />
+                {formatter(car.price)}
               </h2>
-              <h2>{formatter(car.price)}</h2>
             </div>
           ))}
         </div>

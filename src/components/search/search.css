@@ -3,7 +3,6 @@
   align-items: center;
   flex-direction: column;
   margin-top: 2rem;
-  margin-bottom: 7rem;
 }
 
 input {
@@ -17,4 +16,10 @@ input {
 
 input::placeholder {
   color: #000;
+}
+
+@media (min-width: 640px) {
+  .searchContainer {
+    margin-bottom: 7rem;
+  }
 }

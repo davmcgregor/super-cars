@@ -5,6 +5,11 @@
   flex-direction: column;
 }
 
+.carHeader {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 @media (min-width: 640px) {
   .carContainer {
     flex-direction: row;
@@ -12,6 +17,7 @@
   }
 
   .carHeader {
+    margin-top: 0;
     margin-bottom: 4rem;
   }
 }
