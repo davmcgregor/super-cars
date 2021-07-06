@@ -12,15 +12,17 @@ export const CarComponent: React.FC = () => {
 
   if (selectedCar) {
     return (
-      <>
-        <h1 className="carHeader">
-          {selectedCar.make} {selectedCar.model}
-        </h1>
-        <div className="carContainer">
+      <article>
+        <header className="carHeader">
+          <h1>
+            {selectedCar.make} {selectedCar.model}
+          </h1>
+        </header>
+        <section className="carContainer">
           <CarSpecs />
           <CarPrice />
-        </div>
-      </>
+        </section>
+      </article>
     );
   }
   return null;

@@ -10,6 +10,10 @@
   margin-bottom: 2rem;
 }
 
+.carHeader h1 {
+  font-size: 2rem;
+}
+
 @media (min-width: 640px) {
   .carContainer {
     flex-direction: row;

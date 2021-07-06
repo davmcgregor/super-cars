@@ -17,14 +17,18 @@ export const CarSpecs: React.FC = () => {
     return (
       <div className="specsContainer">
         <div className="specsWrapper">
-          <div className="specsHeaders">
+          <div className="specsHeaders" role="list">
             {headers.map((header, key) => (
-              <div key={key}>{header}</div>
+              <div key={key} role="listitem">
+                {header}
+              </div>
             ))}
           </div>
-          <div className="specsItems">
+          <div className="specsItems" role="list">
             {items.map((item, key) => (
-              <div key={key}>{item}</div>
+              <div key={key} role="listitem">
+                {item}
+              </div>
             ))}
           </div>
         </div>

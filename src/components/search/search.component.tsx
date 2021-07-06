@@ -1,12 +1,13 @@
-import './search.css';
 import React, {useContext} from 'react';
 
 import {CarsContext} from '../../context/CarsContext';
+
 import {SearchResultsComponent} from '../searchResults/searchResults.component';
 
+import './search.css';
+
 export const SearchComponent: React.FC = () => {
-  const {query, setQuery, loading, error} =
-    useContext(CarsContext);
+  const {query, setQuery, loading, error} = useContext(CarsContext);
 
   const handleChange = (e: any) => {
     setQuery(e.target.value);
@@ -20,6 +21,7 @@ export const SearchComponent: React.FC = () => {
         placeholder="Search..."
         value={query}
         onChange={handleChange}
+        aria-label="Search for cars" 
       />
       {loading || error ? (
         <p>

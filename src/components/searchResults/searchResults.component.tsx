@@ -1,8 +1,11 @@
-import './searchResults.css';
 import React, {useContext, useEffect} from 'react';
+
 import {CarsContext} from '../../context/CarsContext';
+
 import {getCarDetails} from '../cars/car.api';
 import {formatter} from '../../utils/utils';
+
+import './searchResults.css';
 
 export const SearchResultsComponent: React.FC = () => {
   const {results, setResults, query, setQuery, fetchCars, setSelectedCar} =
@@ -32,6 +35,9 @@ export const SearchResultsComponent: React.FC = () => {
               className="resultsItem"
               key={key}
               onClick={() => handleClick(car.make, car.model)}
+              tabIndex={0}
+              role="button"
+              aria-label={car.make + ' ' + car.model}
             >
               <h2>
                 {car.make} {car.model}
