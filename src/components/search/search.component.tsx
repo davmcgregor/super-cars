@@ -5,12 +5,11 @@ import {CarsContext} from '../../context/CarsContext';
 import {SearchResultsComponent} from '../searchResults/searchResults.component';
 
 export const SearchComponent: React.FC = () => {
-  const {query, setQuery, results, fetchCars, loading, error} =
+  const {query, setQuery, loading, error} =
     useContext(CarsContext);
 
   const handleChange = (e: any) => {
     setQuery(e.target.value);
-    fetchCars(query);
   };
 
   return (
@@ -28,7 +27,7 @@ export const SearchComponent: React.FC = () => {
           {error && 'Something went wrong, please try again'}
         </p>
       ) : null}
-      {results.length ? <SearchResultsComponent /> : null}
+      <SearchResultsComponent />
     </div>
   );
 };
