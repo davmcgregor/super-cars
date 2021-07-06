@@ -12,7 +12,7 @@ export const CarComponent: React.FC = () => {
 
   if (selectedCar) {
     return (
-      <div>
+      <>
         <h1 className="carHeader">
           {selectedCar.make} {selectedCar.model}
         </h1>
@@ -20,7 +20,7 @@ export const CarComponent: React.FC = () => {
           <CarSpecs />
           <CarPrice />
         </div>
-      </div>
+      </>
     );
   }
   return null;
