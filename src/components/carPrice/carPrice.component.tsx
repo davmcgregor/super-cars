@@ -7,18 +7,20 @@ import {formatter} from '../../utils/utils';
 import './carPrice.css';
 
 export const CarPrice: React.FC = () => {
-  const { selectedCar } = useContext(CarsContext);
-  
+  const {selectedCar} = useContext(CarsContext);
+
   if (selectedCar) {
     return (
       <div className="carPriceWrapper">
         <h2>{formatter(selectedCar.price)}</h2>
-        {selectedCar.features.map((feature: string, index: number) => (
-          <span key={index}>
-            {feature}
-            {index !== selectedCar.features.length - 1 && ' - '}
-          </span>
-        ))}
+        <div className="carFeatures">
+          {selectedCar.features.map((feature: string, index: number) => (
+            <span key={index}>
+              {feature}
+              {index !== selectedCar.features.length - 1 && ' - '}
+            </span>
+          ))}
+        </div>
       </div>
     );
   }

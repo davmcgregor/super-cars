@@ -4,4 +4,5 @@
   background-color: #282c34;
   color: #fff;
   text-align: center;
+  overflow-y: scroll;
 }

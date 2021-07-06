@@ -1,5 +1,9 @@
-input::placeholder {
-  color: #000;
+.searchContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
 }
 
 input {
@@ -8,18 +12,9 @@ input {
   border: 0;
   outline: none;
   padding: 0.75rem;
-  width: 15rem;
+  width: 18rem;
 }
 
-.searchContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-@media (min-width: 640px) {
-  .searchContainer {
-    margin-bottom: 7rem;
-  }
+input::placeholder {
+  color: #000;
 }

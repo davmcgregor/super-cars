@@ -1,11 +1,7 @@
-h2 {
-  margin: 0;
-}
-
 .searchResultsContainer {
   position: relative;
   display: inline-block;
-  width: 15rem;
+  width: 18rem;
 }
 
 .searchResultsWrapper {
@@ -13,7 +9,7 @@ h2 {
   position: absolute;
   border: 2px #fff solid;
   background-color: rgba(40, 44, 52, 0.75);
-  width: 14.6rem;
+  width: 17.6rem;
   border-radius: 0px 0px 15px 15px;
   overflow: hidden;
 }
@@ -25,4 +21,8 @@ h2 {
 
 .searchResultsItem:hover {
   background-color: #4b5563;
+}
+
+h2 {
+  margin: 0;
 }

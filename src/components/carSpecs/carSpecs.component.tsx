@@ -6,20 +6,27 @@ import './carSpecs.css';
 
 export const CarSpecs: React.FC = () => {
   const {selectedCar} = useContext(CarsContext);
+  
+  const headers = ['Fuel', 'Shift', 'Color'];
+  const items = [
+    selectedCar.fuelType,
+    selectedCar.shiftType,
+    selectedCar.colour,
+  ];
 
   if (selectedCar) {
     return (
       <div className="carSpecsWrapper">
         <div className="carSpecsSections">
           <div className="carSpecsHeaders">
-            <div>Fuel</div>
-            <div>Shift</div>
-            <div>Color</div>
+            {headers.map((header, key) => (
+              <div key={key}>{header}</div>
+            ))}
           </div>
           <div className="carSpecsItems">
-            <div>{selectedCar.fuelType}</div>
-            <div>{selectedCar.shiftType}</div>
-            <div>{selectedCar.colour}</div>
+            {items.map((item, key) => (
+              <div key={key}>{item}</div>
+            ))}
           </div>
         </div>
       </div>

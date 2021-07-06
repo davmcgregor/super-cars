@@ -1,6 +1,5 @@
-h2 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+.carFeatures {
+  padding: 0.5rem 0.75rem 0;
 }
 
 @media (min-width: 640px) {
