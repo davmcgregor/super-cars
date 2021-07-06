@@ -2,11 +2,11 @@ import React, {useContext} from 'react';
 
 import {CarsContext} from '../../context/CarsContext';
 
-import {SearchResultsComponent} from '../searchResults/searchResults.component';
+import {SearchResults} from '../searchResults/searchResults.component';
 
 import './search.css';
 
-export const SearchComponent: React.FC = () => {
+export const Search: React.FC = () => {
   const {query, setQuery, loading, error} = useContext(CarsContext);
 
   const handleChange = (e: any) => {
@@ -21,7 +21,7 @@ export const SearchComponent: React.FC = () => {
         placeholder="Search..."
         value={query}
         onChange={handleChange}
-        aria-label="Search for cars" 
+        aria-label="Search for cars"
       />
       {loading || error ? (
         <p>
@@ -29,7 +29,7 @@ export const SearchComponent: React.FC = () => {
           {error && 'Something went wrong, please try again'}
         </p>
       ) : null}
-      <SearchResultsComponent />
+      <SearchResults />
     </div>
   );
 };

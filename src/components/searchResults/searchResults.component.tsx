@@ -2,12 +2,12 @@ import React, {useContext, useEffect} from 'react';
 
 import {CarsContext} from '../../context/CarsContext';
 
-import {getCarDetails} from '../cars/car.api';
+import {getCarDetails} from '../car/car.api';
 import {formatter} from '../../utils/utils';
 
 import './searchResults.css';
 
-export const SearchResultsComponent: React.FC = () => {
+export const SearchResults: React.FC = () => {
   const {results, setResults, query, setQuery, fetchCars, setSelectedCar} =
     useContext(CarsContext);
 

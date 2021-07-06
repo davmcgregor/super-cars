@@ -7,7 +7,7 @@ import {CarSpecs} from '../carSpecs/carSpecs.component';
 
 import './car.css';
 
-export const CarComponent: React.FC = () => {
+export const Car: React.FC = () => {
   const {selectedCar} = useContext(CarsContext);
 
   if (selectedCar) {
