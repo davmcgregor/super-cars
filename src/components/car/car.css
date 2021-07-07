@@ -6,8 +6,7 @@
 }
 
 .carHeader {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0 2rem 0;
 }
 
 .carHeader h1 {
@@ -21,7 +20,6 @@
   }
 
   .carHeader {
-    margin-top: 0;
-    margin-bottom: 4rem;
+    margin: 0 0 4rem 0;
   }
 }

@@ -9,16 +9,16 @@
   display: inline-flex;
   background-color: #fff;
   padding: 1rem;
+  font-weight: 500;
 }
 
 .specsHeaders {
   border-right: 2px solid #282c34;
-  padding-right: 1.5rem;
+  padding-right: 1rem;
 }
 
 .specsItems {
-  padding-left: 2.75rem;
-  padding-right: 6rem;
+  padding: 0 4.5rem 0 1.75rem;
 }
 
 @media (min-width: 640px) {

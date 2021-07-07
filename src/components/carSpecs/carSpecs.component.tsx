@@ -7,7 +7,7 @@ import './carSpecs.css';
 export const CarSpecs: React.FC = () => {
   const { selectedCar } = useContext(CarsContext);
   
-  const headers = ['Fuel', 'Shift', 'Color'];
+  const headers = ['Fuel', 'Shift', 'Colour'];
   const items = [
     selectedCar.fuelType,
     selectedCar.shiftType,
