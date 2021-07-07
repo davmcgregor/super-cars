@@ -1,10 +1,15 @@
 .featuresWrapper {
-  padding: 0.5rem 1.5rem 0;
+  padding-top: 0.5rem;
 }
 
 @media (min-width: 640px) {
   .priceContainer {
     width: 50%;
+  }
+
+  .featuresWrapper {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 }
 
