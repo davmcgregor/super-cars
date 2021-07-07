@@ -3,13 +3,13 @@ import {Car} from './components/car/car.component';
 import {Search} from './components/search/search.component';
 import CarsContextProvider from './context/CarsContext';
 
-function App() {
+const App = () => {
   return (
     <CarsContextProvider>
-      <div className="app">
+      <main className="app">
         <Search />
         <Car />
-      </div>
+      </main>
     </CarsContextProvider>
   );
 }
