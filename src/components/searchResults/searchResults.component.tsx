@@ -1,4 +1,5 @@
 import React, {useContext, useEffect} from 'react';
+import {Car} from '../car/car';
 
 import {CarsContext} from '../../context/CarsContext';
 
@@ -30,7 +31,7 @@ export const SearchResults: React.FC = () => {
     return (
       <div className="resultsContainer">
         <div className="resultsWrapper">
-          {results.map((car: any, key: any) => (
+          {results.map((car: Car, key: number) => (
             <div
               className="resultsItem"
               key={key}

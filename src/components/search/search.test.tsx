@@ -3,7 +3,7 @@ import {render, screen} from '@testing-library/react';
 import {Search} from './search.component';
 import {CarsContext} from '../../context/CarsContext';
 
-test('Search render an input tag with query value', () => {
+test('Search renders an input tag with query value', () => {
   const store = {
     fetchCars: () => [],
     query: 'Mazda',

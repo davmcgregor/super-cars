@@ -5,7 +5,8 @@ import {CarsContext} from '../../context/CarsContext';
 import './carSpecs.css';
 
 export const CarSpecs: React.FC = () => {
-  const {selectedCar} = useContext(CarsContext);
+  const { selectedCar } = useContext(CarsContext);
+  
   const headers = ['Fuel', 'Shift', 'Color'];
   const items = [
     selectedCar.fuelType,
@@ -18,14 +19,14 @@ export const CarSpecs: React.FC = () => {
       <div className="specsContainer">
         <div className="specsWrapper">
           <div className="specsHeaders" role="list">
-            {headers.map((header, key) => (
+            {headers.map((header: string, key: number) => (
               <div key={key} role="listitem">
                 {header}
               </div>
             ))}
           </div>
           <div className="specsItems" role="list">
-            {items.map((item, key) => (
+            {items.map((item: string, key: number) => (
               <div key={key} role="listitem">
                 {item}
               </div>

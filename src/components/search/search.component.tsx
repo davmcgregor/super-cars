@@ -9,7 +9,7 @@ import './search.css';
 export const Search: React.FC = () => {
   const {query, setQuery, loading, error} = useContext(CarsContext);
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(e.target.value);
   };
 

@@ -5,11 +5,6 @@ export const CarsContext = createContext();
 
 const CarsContextProvider = (props) => {
   const initialState = [];
-  // const testState = [
-  //   {make: 'Mazda', model: '2', price: 23990},
-  //   {make: 'Mazda', model: '2', price: 23990},
-  //   {make: 'Mazda', model: '2', price: 23990},
-  // ];
 
   const [query, setQuery] = useState('');
   const [results, setResults] = useState(initialState);
