@@ -22,6 +22,7 @@ export const Search: React.FC = () => {
         value={query}
         onChange={handleChange}
         aria-label="Search for cars"
+        data-testid="input"
       />
       {loading || error ? (
         <p>

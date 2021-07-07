@@ -5,7 +5,7 @@ import {CarsContext} from '../../context/CarsContext';
 
 test('SearchResults renders multiple results when a query has been made', () => {
   const store = {
-    fetchCars: () => 'test',
+    fetchCars: () => [],
     query: 'Mazda',
     results: [
       {

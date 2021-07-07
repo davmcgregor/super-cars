@@ -1,8 +1,24 @@
-// it('allows input', () => {
-//   const {getByTestId} = render(<App />);
-//   let item = 'Learn React';
-//   const todoInputElement = getByTestId('todo-input');
-//   todoInputElement.value = item;
-//   fireEvent.change(todoInputElement);
-//   expect(todoInputElement.value).toBe('Learn React');
-// });
+import {render, screen} from '@testing-library/react';
+
+import {Search} from './search.component';
+import {CarsContext} from '../../context/CarsContext';
+
+test('Search render an input tag with query value', () => {
+  const store = {
+    fetchCars: () => [],
+    query: 'Mazda',
+    results: [],
+    setResults: () => [],
+    setQuery: () => '',
+  };
+
+  render(
+    <CarsContext.Provider value={store}>
+      <Search />
+    </CarsContext.Provider>
+  );
+  const inputEl = screen.getByTestId('input');
+  expect(inputEl).toBeInTheDocument();
+  expect(inputEl).toHaveAttribute('type', 'search');
+  expect(screen.getByTestId('input')).toHaveValue('Mazda');
+});
