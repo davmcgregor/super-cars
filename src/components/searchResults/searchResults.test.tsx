@@ -1,6 +1,6 @@
 import {render, screen} from '@testing-library/react';
 
-import {SearchResults} from './searchResults.component';
+import {SearchResults} from './SearchResults';
 import {CarsContext} from '../../context/CarsContext';
 
 test('SearchResults renders multiple results when a query has been made', () => {

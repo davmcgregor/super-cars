@@ -1,5 +1,5 @@
 import {createContext, useState} from 'react';
-import {findCars} from '../components/car/car.api';
+import {findCars} from '../components/Car/Car.api';
 
 export const CarsContext = createContext();
 

@@ -1,6 +1,6 @@
 import {render, screen} from '@testing-library/react';
 
-import {Search} from './search.component';
+import {Search} from './Search';
 import {CarsContext} from '../../context/CarsContext';
 
 test('Search renders an input tag with query value', () => {

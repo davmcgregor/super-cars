@@ -2,11 +2,11 @@ import React, {useContext} from 'react';
 
 import {CarsContext} from '../../context/CarsContext';
 
-import './carSpecs.css';
+import './CarSpecs.css';
 
 export const CarSpecs: React.FC = () => {
-  const { selectedCar } = useContext(CarsContext);
-  
+  const {selectedCar} = useContext(CarsContext);
+
   const headers = ['Fuel', 'Shift', 'Colour'];
   const items = [
     selectedCar.fuelType,

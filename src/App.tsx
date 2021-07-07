@@ -1,6 +1,6 @@
 import './App.css';
-import {Car} from './components/car/car.component';
-import {Search} from './components/search/search.component';
+import {Car} from './components/Car/Car';
+import {Search} from './components/Search/Search';
 import CarsContextProvider from './context/CarsContext';
 
 const App = () => {

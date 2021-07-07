@@ -1,12 +1,12 @@
 import React, {useContext, useEffect} from 'react';
-import {Car} from '../car/car';
+import {Car} from '../Car/Car.d';
 
 import {CarsContext} from '../../context/CarsContext';
 
-import {getCarDetails} from '../car/car.api';
+import {getCarDetails} from '../Car/Car.api';
 import {formatter} from '../../utils/utils';
 
-import './searchResults.css';
+import './SearchResults.css';
 
 export const SearchResults: React.FC = () => {
   const {results, setResults, query, setQuery, fetchCars, setSelectedCar} =

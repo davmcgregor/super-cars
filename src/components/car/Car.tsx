@@ -2,10 +2,10 @@ import React, {useContext} from 'react';
 
 import {CarsContext} from '../../context/CarsContext';
 
-import {CarPrice} from '../carPrice/carPrice.component';
-import {CarSpecs} from '../carSpecs/carSpecs.component';
+import {CarPrice} from '../CarPrice/CarPrice';
+import {CarSpecs} from '../CarSpecs/CarSpecs';
 
-import './car.css';
+import './Car.css';
 
 export const Car: React.FC = () => {
   const {selectedCar} = useContext(CarsContext);

@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 
 import {CarsContext} from '../../context/CarsContext';
 
-import {SearchResults} from '../searchResults/searchResults.component';
+import {SearchResults} from '../SearchResults/SearchResults';
 
 import './search.css';
 

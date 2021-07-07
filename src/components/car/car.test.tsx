@@ -1,6 +1,6 @@
 import {render, screen} from '@testing-library/react';
 
-import {Car} from './car.component';
+import {Car} from './Car';
 import {CarsContext} from '../../context/CarsContext';
 
 test('Car information when a car is Selected', () => {

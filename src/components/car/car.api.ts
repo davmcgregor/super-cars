@@ -1,4 +1,4 @@
-import { Car, CarDetails, SHIFT_TYPES } from "./car";
+import { Car, CarDetails, SHIFT_TYPES } from "./Car.d";
 
 export function findCars(term: string) {
   return new Promise<Car[]>((resolve, reject) => {

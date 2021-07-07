@@ -4,7 +4,7 @@ import {CarsContext} from '../../context/CarsContext';
 
 import {formatter} from '../../utils/utils';
 
-import './carPrice.css';
+import './CarPrice.css';
 
 export const CarPrice: React.FC = () => {
   const {selectedCar} = useContext(CarsContext);
