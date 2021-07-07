@@ -12,14 +12,16 @@ export const CarPrice: React.FC = () => {
   if (selectedCar) {
     return (
       <div className="priceContainer">
-        <h2>{formatter(selectedCar.price)}</h2>
-        <div className="featuresWrapper">
-          {selectedCar.features.map((feature: string, index: number) => (
-            <span key={index}>
-              {feature}
-              {index !== selectedCar.features.length - 1 && ' - '}
-            </span>
-          ))}
+        <div>
+          <h2>{formatter(selectedCar.price)}</h2>
+          <div className="featuresWrapper">
+            {selectedCar.features.map((feature: string, index: number) => (
+              <span key={index}>
+                {feature}
+                {index !== selectedCar.features.length - 1 && ' - '}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     );

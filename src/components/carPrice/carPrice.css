@@ -1,3 +1,8 @@
+.priceContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .featuresWrapper {
   padding-top: 0.5rem;
 }
@@ -5,15 +10,6 @@
 @media (min-width: 640px) {
   .priceContainer {
     width: 50%;
-  }
-
-  .featuresWrapper {
-    padding: 0 1.5rem 0 1.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .priceContainer {
-    /* margin-left: 6rem; */
+    margin: 0 3rem 0 0;
   }
 }

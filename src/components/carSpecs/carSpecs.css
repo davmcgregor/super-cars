@@ -24,7 +24,7 @@
 @media (min-width: 640px) {
   .specsContainer {
     order: 9999;
-    margin-bottom: 0;
+    margin: 0 0 0 3rem;
     width: 50%;
     overflow: hidden;
   }
