@@ -3,7 +3,7 @@ import {render, screen} from '@testing-library/react';
 import {Car} from './Car';
 import {CarsContext} from '../../context/CarsContext';
 
-test('Car information when a car is Selected', () => {
+test('Car renders information when a car is Selected', () => {
   const store = {
     selectedCar: {
       make: 'Mazda',
