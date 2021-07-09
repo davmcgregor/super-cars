@@ -4,7 +4,7 @@ import {CarsContext} from '../../context/CarsContext';
 
 import {SearchResults} from '../SearchResults/SearchResults';
 
-import './search.css';
+import './Search.css';
 
 export const Search: React.FC = () => {
   const {query, setQuery, loading, error} = useContext(CarsContext);
