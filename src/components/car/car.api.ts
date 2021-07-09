@@ -1,11 +1,14 @@
-import { Car, CarDetails, SHIFT_TYPES } from "./Car.d";
+import {Car, CarDetails, SHIFT_TYPES} from './Car.d';
 
 export function findCars(term: string) {
   return new Promise<Car[]>((resolve, reject) => {
     resolve(
       carData
         .filter(
-          (car) => `${car.make} ${car.model}`.toLowerCase().indexOf(term.toLowerCase()) >= 0
+          (car) =>
+            `${car.make} ${car.model}`
+              .toLowerCase()
+              .indexOf(term.toLowerCase()) >= 0
         )
         .map((car) => ({
           make: car.make,
@@ -63,66 +66,66 @@ Pay no mind to the man behind the curtain...
 */
 const carData: CarDetails[] = [
   {
-    make: "Hyundai",
-    model: "i30",
+    make: 'Hyundai',
+    model: 'i30',
     price: 23900,
-    fuelType: "Unleaded",
+    fuelType: 'Unleaded',
     shiftType: SHIFT_TYPES.automatic,
-    features: ["Fast", "Small", "Fun", "300k/l"],
-    colour: "Red",
+    features: ['Fast', 'Small', 'Fun', '300k/l'],
+    colour: 'Red',
   },
   {
-    make: "Alfa Romeo",
-    model: "Giulia",
+    make: 'Alfa Romeo',
+    model: 'Giulia',
     price: 70700,
-    fuelType: "Unleaded",
+    fuelType: 'Unleaded',
     shiftType: SHIFT_TYPES.automatic,
-    features: ["Makes you look important", "Big windows"],
-    colour: "Silver",
+    features: ['Makes you look important', 'Big windows'],
+    colour: 'Silver',
   },
   {
-    make: "Nissan",
-    model: "Navara",
+    make: 'Nissan',
+    model: 'Navara',
     price: 39200,
-    fuelType: "Unleaded",
+    fuelType: 'Unleaded',
     shiftType: SHIFT_TYPES.manual,
-    features: ["It is definitely a car", "Will get you to new places"],
-    colour: "Gold",
+    features: ['It is definitely a car', 'Will get you to new places'],
+    colour: 'Gold',
   },
   {
-    make: "Mazda",
-    model: "2",
+    make: 'Mazda',
+    model: '2',
     price: 23990,
-    fuelType: "Unleaded",
+    fuelType: 'Unleaded',
     shiftType: SHIFT_TYPES.automatic,
-    features: ["Fast", "Small", "Fun", "300k/l"],
-    colour: "Red",
+    features: ['Fast', 'Small', 'Fun', '300k/l'],
+    colour: 'Red',
   },
   {
-    make: "Mazda",
-    model: "3",
+    make: 'Mazda',
+    model: '3',
     price: 43990,
-    fuelType: "Unleaded",
+    fuelType: 'Unleaded',
     shiftType: SHIFT_TYPES.automatic,
-    features: ["Hatchback", "Sleek", "Alloy"],
-    colour: "Black",
+    features: ['Hatchback', 'Sleek', 'Alloy'],
+    colour: 'Black',
   },
   {
-    make: "Mazda",
-    model: "CX-5",
+    make: 'Mazda',
+    model: 'CX-5',
     price: 63990,
-    fuelType: "Unleaded",
+    fuelType: 'Unleaded',
     shiftType: SHIFT_TYPES.automatic,
-    features: ["Zoom zoom", "Super injection cooling", "Turbo thrust mode"],
-    colour: "Pink",
+    features: ['Zoom zoom', 'Super injection cooling', 'Turbo thrust mode'],
+    colour: 'Pink',
   },
   {
-    make: "Volkswagen",
-    model: "Amarok",
+    make: 'Volkswagen',
+    model: 'Amarok',
     price: 43990,
-    fuelType: "Unleaded",
+    fuelType: 'Unleaded',
     shiftType: SHIFT_TYPES.manual,
-    features: ["It can carry stuff", "Strong wheels", "Very big, much wow"],
-    colour: "Black",
+    features: ['It can carry stuff', 'Strong wheels', 'Very big, much wow'],
+    colour: 'Black',
   },
 ];
